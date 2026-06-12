@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { 
   Smartphone, ClipboardCheck, Activity, Stethoscope, HeartPulse, Sparkles
 } from 'lucide-react';
+import { getAssetUrl } from '../utils';
 
 interface VerticalAgentsProps {
   onOpenMockup?: (productId: number, mockupIndex: number, isPhone?: boolean) => void;
@@ -68,7 +69,7 @@ export default function VerticalAgents({ onOpenMockup }: VerticalAgentsProps) {
           >
             {/* Smart Phone Screen */}
             <div className="flex-grow bg-[#090D17] rounded-[21px] overflow-hidden border border-slate-900 flex items-center justify-center">
-              <img src="/assets/15.png" alt="语音实时采集录入" className="w-full h-full object-cover rounded-[21px]" />
+              <img src={getAssetUrl('assets/15.png')} alt="语音实时采集录入" className="w-full h-full object-cover rounded-[21px]" />
             </div>
           </div>
 
@@ -79,7 +80,7 @@ export default function VerticalAgents({ onOpenMockup }: VerticalAgentsProps) {
           >
             {/* Smart Phone Screen */}
             <div className="flex-grow bg-[#090D17] rounded-[21px] overflow-hidden border border-slate-900 flex items-center justify-center">
-              <img src="/assets/16.png" alt="AI 协同自动派单" className="w-full h-full object-cover rounded-[21px]" />
+              <img src={getAssetUrl('assets/16.png')} alt="AI 协同自动派单" className="w-full h-full object-cover rounded-[21px]" />
             </div>
           </div>
         </div>
@@ -136,7 +137,7 @@ export default function VerticalAgents({ onOpenMockup }: VerticalAgentsProps) {
 
             {/* Tablet Screen */}
             <div className="flex-grow bg-[#090D17] rounded-[16px] overflow-hidden border border-slate-900 flex items-center justify-center">
-              <img src="/assets/17.png" alt="基层医生智能助手工作台" className="w-full h-full object-cover rounded-[16px]" />
+              <img src={getAssetUrl('assets/17.png')} alt="基层医生智能助手工作台" className="w-full h-full object-cover rounded-[16px]" />
             </div>
           </div>
 
@@ -147,7 +148,7 @@ export default function VerticalAgents({ onOpenMockup }: VerticalAgentsProps) {
           >
             {/* Smart Phone Screen */}
             <div className="flex-grow bg-[#090D17] rounded-[21px] overflow-hidden border border-slate-900 flex items-center justify-center">
-              <img src="/assets/18.png" alt="健康管家客户端" className="w-full h-full object-cover rounded-[21px]" />
+              <img src={getAssetUrl('assets/18.png')} alt="健康管家客户端" className="w-full h-full object-cover rounded-[21px]" />
             </div>
           </div>
 

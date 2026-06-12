@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Landmark, Briefcase, TrendingUp, Cpu, Award, Zap, ChevronUp, ChevronRight, Menu, X, ArrowUpRight } from 'lucide-react';
 import CompanyOverview from './components/CompanyOverview';
 import TimelineSection from './components/TimelineSection';
+import { getAssetUrl } from './utils';
 
 export default function App() {
   const [activeAnchor, setActiveAnchor] = useState<string>('overview');
@@ -44,7 +45,7 @@ export default function App() {
       {/* 2. CORPORATE HERO HERO SECTION */}
       <section className="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white relative min-h-screen lg:h-screen flex flex-col justify-center py-20 lg:py-0 overflow-hidden border-b border-slate-800">
         {/* Background visual elements */}
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/assets/11.png)' }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${getAssetUrl('assets/11.png')})` }} />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:32px_32px]" />
         <div className="absolute top-12 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />

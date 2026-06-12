@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Building2, Users2, ShieldCheck, Award, Briefcase, Landmark, Trophy, LineChart, Coins, Network, Store, UploadCloud, X as CloseIcon } from 'lucide-react';
 import { enterpriseData, yunmatongData } from '../data';
+import { getAssetUrl } from '../utils';
 
 export default function CompanyOverview() {
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
@@ -374,7 +375,7 @@ export default function CompanyOverview() {
                 {/* Display single image */}
                 <div className="max-w-md mx-auto w-full">
                   <img
-                    src="/assets/14.png"
+                    src={getAssetUrl('assets/14.png')}
                     alt="荣誉资质"
                     className="w-full h-auto object-contain rounded-lg shadow-md border border-slate-200 bg-white"
                   />

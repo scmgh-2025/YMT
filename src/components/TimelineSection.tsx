@@ -9,6 +9,7 @@ import {
 import { projects2020 } from '../data';
 import DuoCaiHuangXiaoXi from './DuoCaiHuangXiaoXi';
 import VerticalAgents from './VerticalAgents';
+import { getAssetUrl } from '../utils';
 
 export default function TimelineSection() {
   const [activeMockup, setActiveMockup] = useState<{ productId: number, mockupIndex: number, isPhone?: boolean } | null>(null);
@@ -42,7 +43,7 @@ export default function TimelineSection() {
     if (productIdx === 1 && mockupIdx === 1) {
       return (
         <div className="bg-[#0B0F19] h-full flex items-center justify-center">
-          <img src="/assets/3.png" alt="成品油智慧大脑运行监视" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/3.png')} alt="成品油智慧大脑运行监视" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -50,7 +51,7 @@ export default function TimelineSection() {
     if (productIdx === 1 && mockupIdx === 2) {
       return (
         <div className="bg-[#090E1A] h-full flex items-center justify-center">
-          <img src="/assets/4.png" alt="加油站全景智慧电子监测系统" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/4.png')} alt="加油站全景智慧电子监测系统" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -58,7 +59,7 @@ export default function TimelineSection() {
     if (productIdx === 2 && mockupIdx === 1) {
       return (
         <div className="bg-[#0D111E] h-full flex items-center justify-center">
-          <img src="/assets/5.png" alt="黔薪保劳动用工智能预警大屏" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/5.png')} alt="黔薪保劳动用工智能预警大屏" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -66,7 +67,7 @@ export default function TimelineSection() {
     if (productIdx === 2 && mockupIdx === 2) {
       return (
         <div className="bg-[#0A0D17] h-full flex items-center justify-center">
-          <img src="/assets/6.png" alt="欠薪预警与线索闭环联动中心" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/6.png')} alt="欠薪预警与线索闭环联动中心" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -74,7 +75,7 @@ export default function TimelineSection() {
     if (productIdx === 3 && mockupIdx === 1) {
       return (
         <div className="bg-[#0C0F17] h-full flex items-center justify-center">
-          <img src="/assets/7.png" alt="12345热线派单协同中心" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/7.png')} alt="12345热线派单协同中心" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -82,7 +83,7 @@ export default function TimelineSection() {
     if (productIdx === 3 && mockupIdx === 2) {
       return (
         <div className="bg-[#0B0E1A] h-full flex items-center justify-center">
-          <img src="/assets/8.png" alt='"1+N"一体化数字报表中心' className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/8.png')} alt='"1+N"一体化数字报表中心' className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -90,7 +91,7 @@ export default function TimelineSection() {
     if (productIdx === 4 && mockupIdx === 1) {
       return (
         <div className="bg-[#0A0D17] h-full flex items-center justify-center">
-          <img src="/assets/9.png" alt="省旅游产业数智互联运营监测平台" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/9.png')} alt="省旅游产业数智互联运营监测平台" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -98,7 +99,7 @@ export default function TimelineSection() {
     if (productIdx === 4 && mockupIdx === 2) {
       return (
         <div className="bg-[#0B0E20] h-full flex items-center justify-center">
-          <img src="/assets/10.png" alt="旅游供应链多端联合清算结算系统" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/10.png')} alt="旅游供应链多端联合清算结算系统" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -106,7 +107,7 @@ export default function TimelineSection() {
     if (productIdx === 5 && mockupIdx === 1) {
       return (
         <div className="bg-[#0A0E1A] h-full flex items-center justify-center">
-          <img src="/assets/1.png" alt="黔南全域数字化通用底座智能运行监控" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/1.png')} alt="黔南全域数字化通用底座智能运行监控" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -114,7 +115,7 @@ export default function TimelineSection() {
     if (productIdx === 5 && mockupIdx === 2) {
       return (
         <div className="bg-[#0A0E1A] h-full flex items-center justify-center">
-          <img src="/assets/2.png" alt="黔南通识语料库与数据要素确权舱" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/2.png')} alt="黔南通识语料库与数据要素确权舱" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -122,7 +123,7 @@ export default function TimelineSection() {
     if (productIdx === 6 && mockupIdx === 1) {
       return (
         <div className="bg-[#090D17] h-full flex items-center justify-center">
-          <img src="/assets/15.png" alt="语音实时采集录入" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/15.png')} alt="语音实时采集录入" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -130,7 +131,7 @@ export default function TimelineSection() {
     if (productIdx === 6 && mockupIdx === 2) {
       return (
         <div className="bg-[#090D17] h-full flex items-center justify-center">
-          <img src="/assets/16.png" alt="AI 协同自动派单" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/16.png')} alt="AI 协同自动派单" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -138,7 +139,7 @@ export default function TimelineSection() {
     if (productIdx === 7 && mockupIdx === 1) {
       return (
         <div className="bg-[#090D17] h-full flex items-center justify-center">
-          <img src="/assets/17.png" alt="基层医生智能助手工作台" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/17.png')} alt="基层医生智能助手工作台" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -146,7 +147,7 @@ export default function TimelineSection() {
     if (productIdx === 7 && mockupIdx === 2) {
       return (
         <div className="bg-[#090D17] h-full flex items-center justify-center">
-          <img src="/assets/18.png" alt="健康管家客户端" className="w-full h-full object-cover" />
+          <img src={getAssetUrl('assets/18.png')} alt="健康管家客户端" className="w-full h-full object-cover" />
         </div>
       );
     }
@@ -301,7 +302,7 @@ export default function TimelineSection() {
 
                   {/* Tablet Workspace Screen */}
                   <div className="flex-1 bg-[#0A0E1A] rounded-xl overflow-hidden border border-slate-900 flex items-center justify-center">
-                    <img src="/assets/1.png" alt="黔南全域数字化通用底座智能运行监控" className="w-full h-full object-cover rounded-xl" />
+                    <img src={getAssetUrl('assets/1.png')} alt="黔南全域数字化通用底座智能运行监控" className="w-full h-full object-cover rounded-xl" />
                   </div>
                 </div>
 
@@ -315,7 +316,7 @@ export default function TimelineSection() {
 
                   {/* Tablet Workspace Screen */}
                   <div className="flex-1 bg-[#0A0E1A] rounded-xl overflow-hidden border border-slate-900 flex items-center justify-center">
-                    <img src="/assets/2.png" alt="黔南通识语料库与数据要素确权舱" className="w-full h-full object-cover rounded-xl" />
+                    <img src={getAssetUrl('assets/2.png')} alt="黔南通识语料库与数据要素确权舱" className="w-full h-full object-cover rounded-xl" />
                   </div>
                 </div>
 
